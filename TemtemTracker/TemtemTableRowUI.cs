@@ -16,7 +16,7 @@ namespace TemtemTracker
     {
 
         private delegate void SafeCallDelegate();
-        public readonly TemtemDataRow row;
+        private readonly TemtemDataRow row;
         private readonly TemtemTableController controller;
 
         public TemtemTableRowUI(TemtemDataRow row, TemtemTableController controller)

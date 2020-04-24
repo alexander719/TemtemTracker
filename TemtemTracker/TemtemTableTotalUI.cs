@@ -13,6 +13,8 @@ namespace TemtemTracker
 {
     public partial class TemtemTableTotalUI : UserControl
     {
+
+
         private delegate void SafeCallDelegate();
         private TemtemDataRow row;
 
