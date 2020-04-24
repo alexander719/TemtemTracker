@@ -151,5 +151,15 @@ namespace TemtemTracker
                 Hide();
             }
         }
+
+        private void IndividualTrackerWindow_Shown(object sender, EventArgs e)
+        {
+            // recalculate and measure text (usefull for high dpi screens upscale)
+            System.Drawing.Size textRow1 = TextRenderer.MeasureText(label2.Text, label2.Font);
+            System.Drawing.Size textRow2 = TextRenderer.MeasureText(label4.Text, label4.Font);
+
+            TLP_2.RowStyles[0] = new RowStyle(SizeType.Absolute, (float)Math.Round((textRow1.Height * 1.15)));
+            TLP_3.RowStyles[0] = new RowStyle(SizeType.Absolute, (float)Math.Round((textRow2.Height * 1.15)));
+        }
     }
 }
