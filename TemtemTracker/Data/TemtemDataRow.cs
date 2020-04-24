@@ -14,4 +14,18 @@ namespace TemtemTracker.Data
         public double encounteredPercent;
         public long timeToLuma;
     }
+
+
+    public class TemtemDataRowforSorting : TemtemDataRow
+    {
+        public int controlTop;
+        public TemtemTableRowUI element;
+    }
+
+    public class sortBuffer
+    {
+        public int code = -1;
+        public bool ShiftAscendingDescending = true;
+        public bool DefaultSorting = true;
+    }
 }

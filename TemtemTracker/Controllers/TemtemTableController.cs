@@ -87,6 +87,7 @@ namespace TemtemTracker.Controllers
                 trackerUI.SetTotal(dataTable.total);
                 //Update time and temtem/h
                 trackerUI.UpdateTime(dataTable.timer.durationTime);
+                trackerUI.sortingTableRows();
                 UpdateTemtemH();
             }
 
@@ -117,6 +118,7 @@ namespace TemtemTracker.Controllers
                     entry.Value.Item2.UpdateWindow();
                 }
                 UpdateTemtemH();
+                trackerUI.sortingTableRows();
                 SetLastChangeTime();
             }
         }
@@ -170,6 +172,7 @@ namespace TemtemTracker.Controllers
                     entry.Value.Item2.UpdateWindow();
                 }
                 UpdateTemtemH();
+                trackerUI.sortingTableRows();
                 SetLastChangeTime();
             }
         }
@@ -195,6 +198,7 @@ namespace TemtemTracker.Controllers
                 trackerUI.UpdateTotal();
                 trackerUI.UpdateTemtemH(0);
                 trackerUI.UpdateTime(0);
+                trackerUI.sortingTableRows();
                 SetLastChangeTime();
             }
         }
@@ -210,6 +214,7 @@ namespace TemtemTracker.Controllers
                     entry.Value.Item2.UpdateWindow();
                 }
                 dataTable.total.timeToLuma = lumaCalculator.GetTimeToLuma(dataTable.total.encountered, dataTable.timer.durationTime, dataTable.total.name);
+                trackerUI.sortingTableRows();
                 trackerUI.UpdateTotal();
             }
         }

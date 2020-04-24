@@ -85,10 +85,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutWindow.cs">
+    <Compile Include="WINDOWS\AboutWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutWindow.Designer.cs">
+    <Compile Include="WINDOWS\AboutWindow.Designer.cs">
       <DependentUpon>AboutWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ConfigLoader.cs" />
@@ -118,66 +118,66 @@
     <Compile Include="Data\TemtemWindowData.cs" />
     <Compile Include="Data\TimerData.cs" />
     <Compile Include="Data\UserSettings.cs" />
-    <Compile Include="IndividualTrackerWindow.cs">
+    <Compile Include="WINDOWS\IndividualTrackerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IndividualTrackerWindow.Designer.cs">
+    <Compile Include="WINDOWS\IndividualTrackerWindow.Designer.cs">
       <DependentUpon>IndividualTrackerWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="SettingsWindow.cs">
+    <Compile Include="WINDOWS\SettingsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SettingsWindow.Designer.cs">
+    <Compile Include="WINDOWS\SettingsWindow.Designer.cs">
       <DependentUpon>SettingsWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="TemtemTableRowHeaderUI.cs">
+    <Compile Include="UserControls\TemtemTableRowHeaderUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TemtemTableRowHeaderUI.Designer.cs">
+    <Compile Include="UserControls\TemtemTableRowHeaderUI.Designer.cs">
       <DependentUpon>TemtemTableRowHeaderUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="TemtemTableTotalUI.cs">
+    <Compile Include="UserControls\TemtemTableTotalUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TemtemTableTotalUI.Designer.cs">
+    <Compile Include="UserControls\TemtemTableTotalUI.Designer.cs">
       <DependentUpon>TemtemTableTotalUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="TemtemTrackerUI.cs">
+    <Compile Include="WINDOWS\TemtemTrackerUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TemtemTrackerUI.Designer.cs">
+    <Compile Include="WINDOWS\TemtemTrackerUI.Designer.cs">
       <DependentUpon>TemtemTrackerUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemtemTableRowUI.cs">
+    <Compile Include="UserControls\TemtemTableRowUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TemtemTableRowUI.Designer.cs">
+    <Compile Include="UserControls\TemtemTableRowUI.Designer.cs">
       <DependentUpon>TemtemTableRowUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="TimeTrackerUI.cs">
+    <Compile Include="UserControls\TimeTrackerUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TimeTrackerUI.Designer.cs">
+    <Compile Include="UserControls\TimeTrackerUI.Designer.cs">
       <DependentUpon>TimeTrackerUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AboutWindow.resx">
+    <EmbeddedResource Include="WINDOWS\AboutWindow.resx">
       <DependentUpon>AboutWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IndividualTrackerWindow.resx">
+    <EmbeddedResource Include="WINDOWS\IndividualTrackerWindow.resx">
       <DependentUpon>IndividualTrackerWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingsWindow.resx">
+    <EmbeddedResource Include="WINDOWS\SettingsWindow.resx">
       <DependentUpon>SettingsWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TemtemTableRowHeaderUI.resx">
+    <EmbeddedResource Include="UserControls\TemtemTableRowHeaderUI.resx">
       <DependentUpon>TemtemTableRowHeaderUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TemtemTableTotalUI.resx">
+    <EmbeddedResource Include="UserControls\TemtemTableTotalUI.resx">
       <DependentUpon>TemtemTableTotalUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TemtemTrackerUI.resx">
+    <EmbeddedResource Include="WINDOWS\TemtemTrackerUI.resx">
       <DependentUpon>TemtemTrackerUI.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -191,10 +191,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TemtemTableRowUI.resx">
+    <EmbeddedResource Include="UserControls\TemtemTableRowUI.resx">
       <DependentUpon>TemtemTableRowUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimeTrackerUI.resx">
+    <EmbeddedResource Include="UserControls\TimeTrackerUI.resx">
       <DependentUpon>TimeTrackerUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest">
