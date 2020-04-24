@@ -93,10 +93,10 @@
             this.settingsTabControl.Controls.Add(this.hotkeysTabPage);
             this.settingsTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.settingsTabControl.Location = new System.Drawing.Point(0, 0);
-            this.settingsTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.settingsTabControl.Name = "settingsTabControl";
             this.settingsTabControl.SelectedIndex = 0;
-            this.settingsTabControl.Size = new System.Drawing.Size(256, 243);
+            this.settingsTabControl.Size = new System.Drawing.Size(466, 443);
             this.settingsTabControl.TabIndex = 0;
             // 
             // windowTabPage
@@ -108,11 +108,11 @@
             this.windowTabPage.Controls.Add(this.labelWindowStyle);
             this.windowTabPage.Controls.Add(this.comboBoxStyleSelect);
             this.windowTabPage.Controls.Add(this.groupBox3);
-            this.windowTabPage.Location = new System.Drawing.Point(4, 22);
-            this.windowTabPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.windowTabPage.Location = new System.Drawing.Point(8, 39);
+            this.windowTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.windowTabPage.Name = "windowTabPage";
-            this.windowTabPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.windowTabPage.Size = new System.Drawing.Size(248, 217);
+            this.windowTabPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.windowTabPage.Size = new System.Drawing.Size(450, 396);
             this.windowTabPage.TabIndex = 2;
             this.windowTabPage.Text = "General";
             this.windowTabPage.UseVisualStyleBackColor = true;
@@ -124,11 +124,11 @@
             this.inactivitySettings.Controls.Add(this.labelInactivityPauseAfter);
             this.inactivitySettings.Controls.Add(this.inactivityTreshold);
             this.inactivitySettings.Controls.Add(this.checkboxInactivity);
-            this.inactivitySettings.Location = new System.Drawing.Point(2, 136);
-            this.inactivitySettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inactivitySettings.Location = new System.Drawing.Point(4, 272);
+            this.inactivitySettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inactivitySettings.Name = "inactivitySettings";
-            this.inactivitySettings.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.inactivitySettings.Size = new System.Drawing.Size(244, 59);
+            this.inactivitySettings.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inactivitySettings.Size = new System.Drawing.Size(442, 118);
             this.inactivitySettings.TabIndex = 11;
             this.inactivitySettings.TabStop = false;
             this.inactivitySettings.Text = "Inactivity";
@@ -136,10 +136,10 @@
             // labelInactivityPauseAfter
             // 
             this.labelInactivityPauseAfter.AutoSize = true;
-            this.labelInactivityPauseAfter.Location = new System.Drawing.Point(4, 36);
-            this.labelInactivityPauseAfter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelInactivityPauseAfter.Location = new System.Drawing.Point(8, 72);
+            this.labelInactivityPauseAfter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInactivityPauseAfter.Name = "labelInactivityPauseAfter";
-            this.labelInactivityPauseAfter.Size = new System.Drawing.Size(109, 13);
+            this.labelInactivityPauseAfter.Size = new System.Drawing.Size(223, 25);
             this.labelInactivityPauseAfter.TabIndex = 13;
             this.labelInactivityPauseAfter.Text = "Pause after (minutes):";
             // 
@@ -150,8 +150,8 @@
             0,
             0,
             0});
-            this.inactivityTreshold.Location = new System.Drawing.Point(118, 34);
-            this.inactivityTreshold.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inactivityTreshold.Location = new System.Drawing.Point(236, 68);
+            this.inactivityTreshold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inactivityTreshold.Maximum = new decimal(new int[] {
             30,
             0,
@@ -163,7 +163,7 @@
             0,
             0});
             this.inactivityTreshold.Name = "inactivityTreshold";
-            this.inactivityTreshold.Size = new System.Drawing.Size(56, 20);
+            this.inactivityTreshold.Size = new System.Drawing.Size(112, 31);
             this.inactivityTreshold.TabIndex = 12;
             this.inactivityTreshold.Value = new decimal(new int[] {
             5,
@@ -175,10 +175,10 @@
             // checkboxInactivity
             // 
             this.checkboxInactivity.AutoSize = true;
-            this.checkboxInactivity.Location = new System.Drawing.Point(4, 16);
-            this.checkboxInactivity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkboxInactivity.Location = new System.Drawing.Point(8, 32);
+            this.checkboxInactivity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkboxInactivity.Name = "checkboxInactivity";
-            this.checkboxInactivity.Size = new System.Drawing.Size(150, 17);
+            this.checkboxInactivity.Size = new System.Drawing.Size(295, 29);
             this.checkboxInactivity.TabIndex = 0;
             this.checkboxInactivity.Text = "Pause timer when inactive";
             this.checkboxInactivity.UseVisualStyleBackColor = true;
@@ -187,17 +187,17 @@
             // labelAutosaveInterval
             // 
             this.labelAutosaveInterval.AutoSize = true;
-            this.labelAutosaveInterval.Location = new System.Drawing.Point(6, 118);
-            this.labelAutosaveInterval.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAutosaveInterval.Location = new System.Drawing.Point(12, 236);
+            this.labelAutosaveInterval.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAutosaveInterval.Name = "labelAutosaveInterval";
-            this.labelAutosaveInterval.Size = new System.Drawing.Size(100, 13);
+            this.labelAutosaveInterval.Size = new System.Drawing.Size(203, 25);
             this.labelAutosaveInterval.TabIndex = 10;
             this.labelAutosaveInterval.Text = "Autosave (minutes):";
             // 
             // autosaveInterval
             // 
-            this.autosaveInterval.Location = new System.Drawing.Point(106, 116);
-            this.autosaveInterval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.autosaveInterval.Location = new System.Drawing.Point(212, 232);
+            this.autosaveInterval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.autosaveInterval.Maximum = new decimal(new int[] {
             10,
             0,
@@ -209,7 +209,7 @@
             0,
             0});
             this.autosaveInterval.Name = "autosaveInterval";
-            this.autosaveInterval.Size = new System.Drawing.Size(56, 20);
+            this.autosaveInterval.Size = new System.Drawing.Size(112, 31);
             this.autosaveInterval.TabIndex = 9;
             this.autosaveInterval.Value = new decimal(new int[] {
             1,
@@ -221,10 +221,10 @@
             // checkBoxDisableWhileTimer
             // 
             this.checkBoxDisableWhileTimer.AutoSize = true;
-            this.checkBoxDisableWhileTimer.Location = new System.Drawing.Point(4, 93);
-            this.checkBoxDisableWhileTimer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxDisableWhileTimer.Location = new System.Drawing.Point(8, 186);
+            this.checkBoxDisableWhileTimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxDisableWhileTimer.Name = "checkBoxDisableWhileTimer";
-            this.checkBoxDisableWhileTimer.Size = new System.Drawing.Size(198, 17);
+            this.checkBoxDisableWhileTimer.Size = new System.Drawing.Size(395, 29);
             this.checkBoxDisableWhileTimer.TabIndex = 8;
             this.checkBoxDisableWhileTimer.Text = "Disable detection while timer paused";
             this.checkBoxDisableWhileTimer.UseVisualStyleBackColor = true;
@@ -233,43 +233,43 @@
             // labelWindowStyle
             // 
             this.labelWindowStyle.AutoSize = true;
-            this.labelWindowStyle.Location = new System.Drawing.Point(6, 74);
-            this.labelWindowStyle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelWindowStyle.Location = new System.Drawing.Point(12, 148);
+            this.labelWindowStyle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWindowStyle.Name = "labelWindowStyle";
-            this.labelWindowStyle.Size = new System.Drawing.Size(75, 13);
+            this.labelWindowStyle.Size = new System.Drawing.Size(148, 25);
             this.labelWindowStyle.TabIndex = 7;
             this.labelWindowStyle.Text = "Window Style:";
             // 
             // comboBoxStyleSelect
             // 
             this.comboBoxStyleSelect.FormattingEnabled = true;
-            this.comboBoxStyleSelect.Location = new System.Drawing.Point(82, 72);
-            this.comboBoxStyleSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxStyleSelect.Location = new System.Drawing.Point(164, 144);
+            this.comboBoxStyleSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxStyleSelect.Name = "comboBoxStyleSelect";
-            this.comboBoxStyleSelect.Size = new System.Drawing.Size(82, 21);
+            this.comboBoxStyleSelect.Size = new System.Drawing.Size(160, 33);
             this.comboBoxStyleSelect.TabIndex = 6;
             this.comboBoxStyleSelect.SelectedIndexChanged += new System.EventHandler(this.ComboBoxStyleSelect_SelectedIndexChanged);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.opacityTrackBar);
-            this.groupBox3.Location = new System.Drawing.Point(4, 4);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(8, 8);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(214, 62);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(428, 124);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Opacity";
             // 
             // opacityTrackBar
             // 
-            this.opacityTrackBar.Location = new System.Drawing.Point(4, 16);
-            this.opacityTrackBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.opacityTrackBar.Location = new System.Drawing.Point(8, 32);
+            this.opacityTrackBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.opacityTrackBar.Maximum = 100;
             this.opacityTrackBar.Minimum = 20;
             this.opacityTrackBar.Name = "opacityTrackBar";
-            this.opacityTrackBar.Size = new System.Drawing.Size(206, 45);
+            this.opacityTrackBar.Size = new System.Drawing.Size(412, 90);
             this.opacityTrackBar.TabIndex = 4;
             this.opacityTrackBar.Value = 100;
             this.opacityTrackBar.Scroll += new System.EventHandler(this.OpacityTrackBar_Scroll);
@@ -277,11 +277,11 @@
             // lumaChanceTabPage
             // 
             this.lumaChanceTabPage.Controls.Add(this.groupBox6);
-            this.lumaChanceTabPage.Location = new System.Drawing.Point(4, 22);
-            this.lumaChanceTabPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lumaChanceTabPage.Location = new System.Drawing.Point(8, 39);
+            this.lumaChanceTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lumaChanceTabPage.Name = "lumaChanceTabPage";
-            this.lumaChanceTabPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lumaChanceTabPage.Size = new System.Drawing.Size(333, 341);
+            this.lumaChanceTabPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lumaChanceTabPage.Size = new System.Drawing.Size(496, 439);
             this.lumaChanceTabPage.TabIndex = 5;
             this.lumaChanceTabPage.Text = "Luma Chance";
             this.lumaChanceTabPage.UseVisualStyleBackColor = true;
@@ -291,11 +291,11 @@
             this.groupBox6.Controls.Add(this.radioButtonLuma75Percent);
             this.groupBox6.Controls.Add(this.radioButtonLuma9999Percent);
             this.groupBox6.Controls.Add(this.radioButtonLuma50Percent);
-            this.groupBox6.Location = new System.Drawing.Point(6, 4);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Location = new System.Drawing.Point(12, 8);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox6.Size = new System.Drawing.Size(212, 72);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(424, 144);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Show Time For";
@@ -303,10 +303,10 @@
             // radioButtonLuma75Percent
             // 
             this.radioButtonLuma75Percent.AutoSize = true;
-            this.radioButtonLuma75Percent.Location = new System.Drawing.Point(4, 33);
-            this.radioButtonLuma75Percent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLuma75Percent.Location = new System.Drawing.Point(8, 66);
+            this.radioButtonLuma75Percent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonLuma75Percent.Name = "radioButtonLuma75Percent";
-            this.radioButtonLuma75Percent.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonLuma75Percent.Size = new System.Drawing.Size(86, 29);
             this.radioButtonLuma75Percent.TabIndex = 4;
             this.radioButtonLuma75Percent.TabStop = true;
             this.radioButtonLuma75Percent.Text = "75%";
@@ -316,10 +316,10 @@
             // radioButtonLuma9999Percent
             // 
             this.radioButtonLuma9999Percent.AutoSize = true;
-            this.radioButtonLuma9999Percent.Location = new System.Drawing.Point(4, 52);
-            this.radioButtonLuma9999Percent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLuma9999Percent.Location = new System.Drawing.Point(8, 104);
+            this.radioButtonLuma9999Percent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonLuma9999Percent.Name = "radioButtonLuma9999Percent";
-            this.radioButtonLuma9999Percent.Size = new System.Drawing.Size(60, 17);
+            this.radioButtonLuma9999Percent.Size = new System.Drawing.Size(116, 29);
             this.radioButtonLuma9999Percent.TabIndex = 3;
             this.radioButtonLuma9999Percent.TabStop = true;
             this.radioButtonLuma9999Percent.Text = "99.99%";
@@ -329,10 +329,10 @@
             // radioButtonLuma50Percent
             // 
             this.radioButtonLuma50Percent.AutoSize = true;
-            this.radioButtonLuma50Percent.Location = new System.Drawing.Point(4, 16);
-            this.radioButtonLuma50Percent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonLuma50Percent.Location = new System.Drawing.Point(8, 32);
+            this.radioButtonLuma50Percent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonLuma50Percent.Name = "radioButtonLuma50Percent";
-            this.radioButtonLuma50Percent.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonLuma50Percent.Size = new System.Drawing.Size(86, 29);
             this.radioButtonLuma50Percent.TabIndex = 2;
             this.radioButtonLuma50Percent.TabStop = true;
             this.radioButtonLuma50Percent.Text = "50%";
@@ -344,11 +344,11 @@
             this.saiparkTabPage.Controls.Add(this.groupBox2);
             this.saiparkTabPage.Controls.Add(this.groupBox1);
             this.saiparkTabPage.Controls.Add(this.checkBoxSaiparkMode);
-            this.saiparkTabPage.Location = new System.Drawing.Point(4, 22);
-            this.saiparkTabPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saiparkTabPage.Location = new System.Drawing.Point(8, 39);
+            this.saiparkTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saiparkTabPage.Name = "saiparkTabPage";
-            this.saiparkTabPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.saiparkTabPage.Size = new System.Drawing.Size(333, 341);
+            this.saiparkTabPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saiparkTabPage.Size = new System.Drawing.Size(496, 439);
             this.saiparkTabPage.TabIndex = 3;
             this.saiparkTabPage.Text = "Saipark";
             this.saiparkTabPage.UseVisualStyleBackColor = true;
@@ -359,11 +359,11 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.temtem2NameSelect);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(6, 85);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(12, 170);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(212, 59);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(424, 118);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Temtem 2";
@@ -376,40 +376,40 @@
             0,
             0,
             65536});
-            this.temtem2Multiplier.Location = new System.Drawing.Point(58, 37);
-            this.temtem2Multiplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.temtem2Multiplier.Location = new System.Drawing.Point(116, 74);
+            this.temtem2Multiplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.temtem2Multiplier.Name = "temtem2Multiplier";
-            this.temtem2Multiplier.Size = new System.Drawing.Size(70, 20);
+            this.temtem2Multiplier.Size = new System.Drawing.Size(140, 31);
             this.temtem2Multiplier.TabIndex = 5;
             this.temtem2Multiplier.ValueChanged += new System.EventHandler(this.Temtem2Multiplier_ValueChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 38);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(8, 76);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(105, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Multiplier:";
             // 
             // temtem2NameSelect
             // 
             this.temtem2NameSelect.FormattingEnabled = true;
-            this.temtem2NameSelect.Location = new System.Drawing.Point(48, 16);
-            this.temtem2NameSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.temtem2NameSelect.Location = new System.Drawing.Point(96, 32);
+            this.temtem2NameSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.temtem2NameSelect.Name = "temtem2NameSelect";
-            this.temtem2NameSelect.Size = new System.Drawing.Size(82, 21);
+            this.temtem2NameSelect.Size = new System.Drawing.Size(160, 33);
             this.temtem2NameSelect.TabIndex = 3;
             this.temtem2NameSelect.SelectedIndexChanged += new System.EventHandler(this.Temtem2NameSelect_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 18);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(8, 36);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
+            this.label5.Size = new System.Drawing.Size(80, 25);
             this.label5.TabIndex = 1;
             this.label5.Text = "Name: ";
             // 
@@ -419,11 +419,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.temtem1NameSelect);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(6, 22);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 44);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(212, 59);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(424, 118);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Temtem 1";
@@ -436,55 +436,55 @@
             0,
             0,
             65536});
-            this.temtem1Multiplier.Location = new System.Drawing.Point(58, 37);
-            this.temtem1Multiplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.temtem1Multiplier.Location = new System.Drawing.Point(116, 74);
+            this.temtem1Multiplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.temtem1Multiplier.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.temtem1Multiplier.Name = "temtem1Multiplier";
-            this.temtem1Multiplier.Size = new System.Drawing.Size(70, 20);
+            this.temtem1Multiplier.Size = new System.Drawing.Size(140, 31);
             this.temtem1Multiplier.TabIndex = 5;
             this.temtem1Multiplier.ValueChanged += new System.EventHandler(this.Temtem1Multiplier_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(8, 76);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.Size = new System.Drawing.Size(105, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Multiplier:";
             // 
             // temtem1NameSelect
             // 
             this.temtem1NameSelect.FormattingEnabled = true;
-            this.temtem1NameSelect.Location = new System.Drawing.Point(48, 16);
-            this.temtem1NameSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.temtem1NameSelect.Location = new System.Drawing.Point(96, 32);
+            this.temtem1NameSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.temtem1NameSelect.Name = "temtem1NameSelect";
-            this.temtem1NameSelect.Size = new System.Drawing.Size(82, 21);
+            this.temtem1NameSelect.Size = new System.Drawing.Size(160, 33);
             this.temtem1NameSelect.TabIndex = 3;
             this.temtem1NameSelect.SelectedIndexChanged += new System.EventHandler(this.Temtem1NameSelect_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(8, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(80, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name: ";
             // 
             // checkBoxSaiparkMode
             // 
             this.checkBoxSaiparkMode.AutoSize = true;
-            this.checkBoxSaiparkMode.Location = new System.Drawing.Point(6, 4);
-            this.checkBoxSaiparkMode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxSaiparkMode.Location = new System.Drawing.Point(12, 8);
+            this.checkBoxSaiparkMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxSaiparkMode.Name = "checkBoxSaiparkMode";
-            this.checkBoxSaiparkMode.Size = new System.Drawing.Size(128, 17);
+            this.checkBoxSaiparkMode.Size = new System.Drawing.Size(250, 29);
             this.checkBoxSaiparkMode.TabIndex = 0;
             this.checkBoxSaiparkMode.Text = "Enable Saipark Mode";
             this.checkBoxSaiparkMode.UseVisualStyleBackColor = true;
@@ -494,11 +494,11 @@
             // 
             this.hotkeysTabPage.Controls.Add(this.groupBox5);
             this.hotkeysTabPage.Controls.Add(this.groupBox4);
-            this.hotkeysTabPage.Location = new System.Drawing.Point(4, 22);
-            this.hotkeysTabPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hotkeysTabPage.Location = new System.Drawing.Point(8, 39);
+            this.hotkeysTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hotkeysTabPage.Name = "hotkeysTabPage";
-            this.hotkeysTabPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.hotkeysTabPage.Size = new System.Drawing.Size(333, 341);
+            this.hotkeysTabPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hotkeysTabPage.Size = new System.Drawing.Size(496, 439);
             this.hotkeysTabPage.TabIndex = 4;
             this.hotkeysTabPage.Text = "Hotkeys";
             this.hotkeysTabPage.UseVisualStyleBackColor = true;
@@ -507,21 +507,21 @@
             // 
             this.groupBox5.Controls.Add(this.buttonRemapPauseTimerHotkey);
             this.groupBox5.Controls.Add(this.labelPauseTimerHotkey);
-            this.groupBox5.Location = new System.Drawing.Point(6, 61);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Location = new System.Drawing.Point(12, 122);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox5.Size = new System.Drawing.Size(212, 54);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(424, 108);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pause Timer Hotkey";
             // 
             // buttonRemapPauseTimerHotkey
             // 
-            this.buttonRemapPauseTimerHotkey.Location = new System.Drawing.Point(140, 18);
-            this.buttonRemapPauseTimerHotkey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRemapPauseTimerHotkey.Location = new System.Drawing.Point(280, 36);
+            this.buttonRemapPauseTimerHotkey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRemapPauseTimerHotkey.Name = "buttonRemapPauseTimerHotkey";
-            this.buttonRemapPauseTimerHotkey.Size = new System.Drawing.Size(68, 22);
+            this.buttonRemapPauseTimerHotkey.Size = new System.Drawing.Size(136, 44);
             this.buttonRemapPauseTimerHotkey.TabIndex = 1;
             this.buttonRemapPauseTimerHotkey.Text = "Remap";
             this.buttonRemapPauseTimerHotkey.UseVisualStyleBackColor = true;
@@ -530,10 +530,10 @@
             // labelPauseTimerHotkey
             // 
             this.labelPauseTimerHotkey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPauseTimerHotkey.Location = new System.Drawing.Point(4, 20);
-            this.labelPauseTimerHotkey.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPauseTimerHotkey.Location = new System.Drawing.Point(8, 40);
+            this.labelPauseTimerHotkey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPauseTimerHotkey.Name = "labelPauseTimerHotkey";
-            this.labelPauseTimerHotkey.Size = new System.Drawing.Size(132, 18);
+            this.labelPauseTimerHotkey.Size = new System.Drawing.Size(264, 36);
             this.labelPauseTimerHotkey.TabIndex = 0;
             this.labelPauseTimerHotkey.Text = "Modifier + Key";
             this.labelPauseTimerHotkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -542,21 +542,21 @@
             // 
             this.groupBox4.Controls.Add(this.buttonRemapResetTableHotkey);
             this.groupBox4.Controls.Add(this.labelResetTableHotkey);
-            this.groupBox4.Location = new System.Drawing.Point(6, 4);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Location = new System.Drawing.Point(12, 8);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox4.Size = new System.Drawing.Size(212, 54);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(424, 108);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Reset Table Hotkey";
             // 
             // buttonRemapResetTableHotkey
             // 
-            this.buttonRemapResetTableHotkey.Location = new System.Drawing.Point(140, 18);
-            this.buttonRemapResetTableHotkey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRemapResetTableHotkey.Location = new System.Drawing.Point(280, 36);
+            this.buttonRemapResetTableHotkey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRemapResetTableHotkey.Name = "buttonRemapResetTableHotkey";
-            this.buttonRemapResetTableHotkey.Size = new System.Drawing.Size(68, 22);
+            this.buttonRemapResetTableHotkey.Size = new System.Drawing.Size(136, 44);
             this.buttonRemapResetTableHotkey.TabIndex = 1;
             this.buttonRemapResetTableHotkey.Text = "Remap";
             this.buttonRemapResetTableHotkey.UseVisualStyleBackColor = true;
@@ -565,23 +565,23 @@
             // labelResetTableHotkey
             // 
             this.labelResetTableHotkey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResetTableHotkey.Location = new System.Drawing.Point(4, 20);
-            this.labelResetTableHotkey.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelResetTableHotkey.Location = new System.Drawing.Point(8, 40);
+            this.labelResetTableHotkey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelResetTableHotkey.Name = "labelResetTableHotkey";
-            this.labelResetTableHotkey.Size = new System.Drawing.Size(132, 18);
+            this.labelResetTableHotkey.Size = new System.Drawing.Size(264, 36);
             this.labelResetTableHotkey.TabIndex = 0;
             this.labelResetTableHotkey.Text = "Modifier + Key";
             this.labelResetTableHotkey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SettingsWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(256, 243);
+            this.ClientSize = new System.Drawing.Size(466, 443);
             this.Controls.Add(this.settingsTabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "SettingsWindow";
             this.ShowInTaskbar = false;

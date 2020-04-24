@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -29,8 +30,31 @@ namespace TemtemTracker
         {
             InitializeComponent();
             aboutWindow = new AboutWindow();
-            this.Width = settingsController.GetUserSettings().mainWindowWidth;
-            this.Height = settingsController.GetUserSettings().mainWindowHeight;
+
+            try
+            {
+                uint DPIx, DPIy;
+                winAPI.GetDpi(Screen.FromControl(this), winAPI.DpiType.Effective, out DPIx, out DPIy);
+                float xProportion = ((float)DPIx / 96F);
+                float yProportion = ((float)DPIy / 96F);
+
+                if (xProportion != 1 || yProportion != 1)
+                {
+                    this.Width = (int)Math.Round((float)(settingsController.GetUserSettings().mainWindowWidth) * xProportion);
+                    this.Height = (int)Math.Round((float)(settingsController.GetUserSettings().mainWindowHeight) * yProportion);
+                }
+                else
+                {
+                    this.Width = settingsController.GetUserSettings().mainWindowWidth;
+                    this.Height = settingsController.GetUserSettings().mainWindowHeight;
+                }
+            }
+            catch
+            {
+                this.Width = settingsController.GetUserSettings().mainWindowWidth;
+                this.Height = settingsController.GetUserSettings().mainWindowHeight;
+            }
+
             this.Opacity = settingsController.GetUserSettings().mainWindowOpacity;
             settingsController.TimerPausedToggled += TogglePauseTimerUIIndication;
             this.settingsController = settingsController;
@@ -201,7 +225,30 @@ namespace TemtemTracker
 
         private void TemtemTrackerUI_ResizeEnd(object sender, EventArgs e)
         {
-            settingsController.SetMainWindowSize(this.Size);
+            try
+            {
+                uint DPIx, DPIy;
+                winAPI.GetDpi(Screen.FromControl(this), winAPI.DpiType.Effective, out DPIx, out DPIy);
+                float xProportion = ((float)DPIx / 96F);
+                float yProportion = ((float)DPIy / 96F);
+
+                if (xProportion != 1 || yProportion != 1)
+                {
+                    Size medidas = this.Size;
+                    medidas.Height = (int)Math.Round((medidas.Height / yProportion));
+                    medidas.Width = (int)Math.Round((medidas.Width / xProportion));
+
+                    settingsController.SetMainWindowSize(medidas);
+                }
+                else
+                {
+                    settingsController.SetMainWindowSize(this.Size);
+                }
+            }
+            catch
+            {
+                settingsController.SetMainWindowSize(this.Size);
+            }
         }
 
         private void LoadTableToolStripMenuItem_Click(object sender, EventArgs e)
@@ -433,7 +480,6 @@ namespace TemtemTracker
         }
         #endregion
 
-
-
     }
 }
+

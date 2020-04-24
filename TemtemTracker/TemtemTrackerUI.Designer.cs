@@ -41,8 +41,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.TLP_1 = new System.Windows.Forms.TableLayoutPanel();
-            this.temtemTableRowHeaderUI = new TemtemTracker.TemtemTableRowHeaderUI();
             this.trackerTable = new System.Windows.Forms.TableLayoutPanel();
+            this.temtemTableRowHeaderUI = new TemtemTracker.TemtemTableRowHeaderUI();
             this.temtemTableTotalUI = new TemtemTracker.TemtemTableTotalUI();
             this.timeTracker = new TemtemTracker.TimeTrackerUI();
             this.menuStrip1.SuspendLayout();
@@ -160,20 +160,6 @@
             this.TLP_1.Size = new System.Drawing.Size(762, 390);
             this.TLP_1.TabIndex = 3;
             // 
-            // temtemTableRowHeaderUI
-            // 
-            this.temtemTableRowHeaderUI.AutoSize = true;
-            this.temtemTableRowHeaderUI.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.temtemTableRowHeaderUI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.temtemTableRowHeaderUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temtemTableRowHeaderUI.Location = new System.Drawing.Point(2, 2);
-            this.temtemTableRowHeaderUI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
-            this.temtemTableRowHeaderUI.Name = "temtemTableRowHeaderUI";
-            this.temtemTableRowHeaderUI.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.temtemTableRowHeaderUI.Size = new System.Drawing.Size(758, 27);
-            this.temtemTableRowHeaderUI.TabIndex = 1;
-            this.temtemTableRowHeaderUI.Clickr += new System.EventHandler<TemtemTracker.ClickControl>(this.temtemTableRowHeaderUI_Clickr);
-            // 
             // trackerTable
             // 
             this.trackerTable.AutoScroll = true;
@@ -192,6 +178,20 @@
             this.trackerTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.trackerTable.Size = new System.Drawing.Size(758, 303);
             this.trackerTable.TabIndex = 3;
+            // 
+            // temtemTableRowHeaderUI
+            // 
+            this.temtemTableRowHeaderUI.AutoSize = true;
+            this.temtemTableRowHeaderUI.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.temtemTableRowHeaderUI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.temtemTableRowHeaderUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temtemTableRowHeaderUI.Location = new System.Drawing.Point(2, 2);
+            this.temtemTableRowHeaderUI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.temtemTableRowHeaderUI.Name = "temtemTableRowHeaderUI";
+            this.temtemTableRowHeaderUI.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.temtemTableRowHeaderUI.Size = new System.Drawing.Size(758, 27);
+            this.temtemTableRowHeaderUI.TabIndex = 1;
+            this.temtemTableRowHeaderUI.Clickr += new System.EventHandler<TemtemTracker.ClickControl>(this.temtemTableRowHeaderUI_Clickr);
             // 
             // temtemTableTotalUI
             // 
@@ -226,9 +226,10 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "TemtemTrackerUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TemtemTracker";
             this.TopMost = true;
             this.Shown += new System.EventHandler(this.TemtemTrackerUI_Shown);
